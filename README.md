@@ -1,10 +1,13 @@
 # 🏨 **ETL & Data Analysis of Hotel Reservations**
 
-This project is focused on extracting, transforming, and loading (ETL) hotel reservation data, followed by exploratory data analysis to generate valuable insights. The dataset includes information about customers, hotels, reservations, and pricing.
+This project is focused on extracting, transforming, and loading (ETL) hotel reservation data, followed by exploratory data analysis to generate valuable insights. The dataset includes information about customers, hotels, reservations, and pricing. 
+
 
 ## 📚 **Project Description**  
-The goal of this project is to analyze hotel reservation data to identify patterns in customer behavior, hotel performance, and revenue trends. The analysis includes:  
-- Cleaning and transforming raw data from different sources.  
+The goal of this project is to analyze hotel reservation data to identify patterns in customer behavior, hotel performance, and revenue trends. The project goals includes:  
+- Cleaning and transforming raw data from different sources.
+- Extract data from Madrid Community APIs to analyze whether events had an impact on reservations.
+- Standardization and unification of various files: raw files, transformed files, and files generated with new value.
 - Storing structured data in a PostgreSQL database.  
 - Running SQL queries to extract key insights.  
 - Performing exploratory data analysis (EDA) and visualization.  
@@ -42,7 +45,7 @@ pip install -r requirements.txt
 - **Total Reservations:** Analyzed the number of reservations made over a period of time.  
 - **Top Spending Customers:** Identified the top 10 customers who spent the most.  
 - **Revenue Analysis:** Compared the revenue of competitor hotels vs. our brand.  
-- **Peak Booking Date:** Determined the date with the highest number of reservations.  
+- **Peak Events:** Determined importance of events in the number of reservations.  
 
 ## 🛠 **Next Steps**  
 
