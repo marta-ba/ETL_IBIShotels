@@ -1,5 +1,9 @@
 import pandas as pd
-from src.soporte_limpieza import tranform_dates, split_firstname_lastname
+import numpy as np
+import seaborn as sns
+from src.soporte_limpieza import tranform_dates
+import os
+
 
 def clean_data(archivo_entrada, archivo_salida):
     """Limpia y transforma un archivo CSV con datos de hoteles
@@ -21,5 +25,4 @@ def clean_data(archivo_entrada, archivo_salida):
     """
     df = pd.read_csv(archivo_entrada)
     df['date'] = df['date'].apply(tranform_dates)
-    df['first_name'], df['last_name'] = zip(*df['name'].apply(split_firstname_lastname))
     df.to_csv(archivo_salida, index=False)
